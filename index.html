@@ -20,6 +20,8 @@
             }
         }
     </script>
+    <!-- font awesome CDN -->
+    <script src="https://kit.fontawesome.com/569cb526d6.js" crossorigin="anonymous"></script>
     <!-- Lato font link -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -35,7 +37,7 @@
 <body>
     <header>
         <nav>
-            <div class="navbar bg-base-100">
+            <div class="navbar bg-base-100 bg-red-500 border rounded-full">
                 <div class="navbar-start">
                   <div class="dropdown">
                     <label tabindex="0" class="btn btn-ghost lg:hidden">
@@ -57,25 +59,18 @@
                     </ul>
                   </div>
                 </div>
-                <a class="btn btn-ghost normal-case text-xl"><img src="images/logo.png" alt="Fruits">Fruit Burst</a>
+                <a class="btn btn-ghost normal-case text-xl"><img src="images/logo.png" width="40" alt="Fruits">Fruit Burst</a>
                 <div class="navbar-end">
                     <div class="flex-none gap-2">
-                        <div class="form-control">
-                            <input type="text" placeholder="Search" class="input input-bordered w-24 md:w-auto" />
+                        <div class="form-control inline-block relative">
+                            <input type="text" placeholder="Search here" class="input input-bordered rounded-full w-24 md:w-auto" />
+                            <button class="btn-circle absolute right-1">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </button> 
                         </div>
                     </div>
                 </div>
               </div>
-            <!-- <div class="navbar bg-base-100">
-                <div class="flex-1">
-                    <a class="btn btn-ghost normal-case text-xl">daisyUI</a>
-                </div>
-                <div class="flex-none gap-2">
-                    <div class="form-control">
-                        <input type="text" placeholder="Search" class="input input-bordered w-24 md:w-auto" />
-                    </div>
-                </div>
-            </div> -->
         </nav>
     </header>
     <main></main>
