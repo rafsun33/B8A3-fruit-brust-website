@@ -74,18 +74,53 @@
         </nav>
     </header>
     <main class="w-10/12 mx-auto">
-        <section>
-            <div class="hero min-h-screen" style="background-image: url('images/banner3.png');">
+        <!-- <section>
+            <div class="hero" style="background-image: url('images/banner3.png');">
                 <div class="hero-overlay bg-opacity-60"></div>
                 <div class="hero-content text-center text-neutral-content">
                   <div class="max-w-md">
-                    <h1 class="mb-5 text-5xl font-bold">Exotic tastes at your doorstep</h1>
+                    <h1 class="mb-5 text-5xl font-bold mt-20">Exotic tastes at your doorstep</h1>
                     <p class="mb-5">We supply highly quality organic products</p>
-                    <button class="btn btn-primary bg-red-500 border-0">Shop Now</button>
+                    <button class="btn btn-primary bg-red-500 border-0 mb-52">Shop Now</button>
                   </div>
                 </div>
+            </div>
+        </section> -->
+        <div class="carousel w-full">
+            <div id="slide1" class="carousel-item relative w-full">
+              <div class="relative">
+                <img src="/images/banner1.png" class="w-full" />
+                <h1 class="text-white absolute bottom-60 left-60 text-7xl font-extrabold text-center mx-auto">Exotic tastes at your <br> doorstep</h1>
+                <p class="text-white absolute bottom-56 left-60">We supply highly quality organic products</p>
+                <button class="btn text-white bg-red-500 border-0 absolute bottom-56 left-60">Shop Now</button>
               </div>
-        </section>
+              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                <a href="#slide4" class="text-white">❮</a> 
+                <a href="#slide2" class="text-white">❯</a>
+              </div>
+            </div> 
+            <div id="slide2" class="carousel-item relative w-full">
+              <img src="/images/banner2.png" class="w-full" />
+              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                <a href="#slide1" class="text-white">❮</a> 
+                <a href="#slide3" class="text-white">❯</a>
+              </div>
+            </div> 
+            <div id="slide3" class="carousel-item relative w-full">
+              <img src="/images/banner3.png" class="w-full" />
+              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                <a href="#slide2" class="text-white">❮</a> 
+                <a href="#slide4" class="text-white">❯</a>
+              </div>
+            </div> 
+            <div id="slide4" class="carousel-item relative w-full">
+              <img src="/images/banner4.png" class="w-full" />
+              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                <a href="#slide3" class="text-white">❮</a> 
+                <a href="#slide1" class="text-white">❯</a>
+              </div>
+            </div>
+          </div>
     </main>
     <footer></footer>
 </body>
