@@ -211,7 +211,6 @@
                     </figure>
                     <div class="card-body items-center text-center px-12">
                         <h2 class="card-title divide-black">12.90$ - 18.85$</h2>
-                        <hr>
                         <p>Apples</p>
                         <div class="divider"></div>
                         <div class="card-actions">
@@ -230,7 +229,45 @@
                                 <input type="radio" name="rating-10" class="bg-red-500 mask mask-star-2 mask-half-2" />
                             </div>
                         </div>
-                        <a href="index.html" class="text-red-500 font-bold">Details</a>
+                        <!-- first modal of first card -->
+                        <button class=" text-red-500 font-bold mt-3" onclick="my_modal_1.showModal()">Details</button>
+                        <dialog id="my_modal_1" class="modal">
+                            <form method="dialog" class="modal-box">
+                                <figure class="px-10 mt-8">
+                                    <img src="/images/fruit6.png" alt="Apple" width="160" class="rounded-xl mx-8 w-20 lg:w-40" />
+                                </figure>
+                                <h3 class="font-bold text-lg my-6">Apples</h3>
+                                <p class="px-8">Professional employees are there for you to pick the most amazing and
+                                    fresh fruits.</p>
+                                <div class="rating rating-sm rating-half mt-4">
+                                    <input type="radio" name="rating-10" class="rating-hidden" />
+                                    <input type="radio" name="rating-10"
+                                        class="bg-red-500 mask mask-star-2 mask-half-1" />
+                                    <input type="radio" name="rating-10"
+                                        class="bg-red-500 mask mask-star-2 mask-half-2" />
+                                    <input type="radio" name="rating-10"
+                                        class="bg-red-500 mask mask-star-2 mask-half-1" checked />
+                                    <input type="radio" name="rating-10"
+                                        class="bg-red-500 mask mask-star-2 mask-half-2" />
+                                    <input type="radio" name="rating-10"
+                                        class="bg-red-500 mask mask-star-2 mask-half-1" />
+                                    <input type="radio" name="rating-10"
+                                        class="bg-red-500 mask mask-star-2 mask-half-2" />
+                                    <input type="radio" name="rating-10"
+                                        class="bg-red-500 mask mask-star-2 mask-half-1" />
+                                    <input type="radio" name="rating-10"
+                                        class="bg-red-500 mask mask-star-2 mask-half-2" />
+                                    <input type="radio" name="rating-10"
+                                        class="bg-red-500 mask mask-star-2 mask-half-1" />
+                                    <input type="radio" name="rating-10"
+                                        class="bg-red-500 mask mask-star-2 mask-half-2" />
+                                </div>
+                                <div class="modal-action flex justify-center mb-10">
+                                    <button class="btn text-red-500 bg-transparent border border-red-500">Close</button>
+                                    <button class="btn bg-red-500 text-white">Buy Now</button>
+                                </div>
+                            </form>
+                        </dialog>
                     </div>
                 </div>
                 <!-- second card -->
@@ -240,7 +277,6 @@
                     </figure>
                     <div class="card-body items-center text-center px-12">
                         <h2 class="card-title divide-black">12.90$ - 18.85$</h2>
-                        <hr>
                         <p>Apples</p>
                         <div class="divider"></div>
                         <div class="card-actions">
@@ -269,7 +305,6 @@
                     </figure>
                     <div class="card-body items-center text-center px-12">
                         <h2 class="card-title divide-black">12.90$ - 18.85$</h2>
-                        <hr>
                         <p>Apples</p>
                         <div class="divider"></div>
                         <div class="card-actions">
@@ -298,7 +333,6 @@
                     </figure>
                     <div class="card-body items-center text-center px-12">
                         <h2 class="card-title divide-black">12.90$ - 18.85$</h2>
-                        <hr>
                         <p>Apples</p>
                         <div class="divider"></div>
                         <div class="card-actions">
@@ -428,10 +462,12 @@
     <!-- footer section -->
     <footer
         class="footer footer-center p-10 bg-base-200 text-base-content text-white rounded w-10/12 mx-auto bg-[#121212]">
+        <!-- footer brand section -->
         <div>
             <a class="btn btn-ghost normal-case text-3xl font-extrabold text-white mt-14"><img src="images/logo.png"
                     width="40" alt="Fruits">Fruit Burst</a>
         </div>
+        <!-- footer short infos. section-->
         <div class="grid grid-flow-col gap-8 grid-rows-2 lg:grid-rows-1">
             <a class="link link-hover">Home</a>
             <a class="link link-hover">About Us</a>
@@ -440,6 +476,7 @@
             <a class="link link-hover">Support</a>
             <a class="link link-hover">My Account</a>
         </div>
+        <!-- footer social media section -->
         <div class="grid grid-flow-col gap-6 mb-14">
             <a href=""><i class="fa-brands fa-twitter fa-xl"></i></a>
             <a href=""><i class="fa-brands fa-facebook fa-xl"></i></a>
